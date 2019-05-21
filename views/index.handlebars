@@ -1,0 +1,67 @@
+<div class="container">
+	<div class="row">
+		<header class="col-12">
+			<div class="jumbotron shadow bg-secondary text-light text-center text-md-left rounded pl-md-5">
+				<h1 class="display-4 mb-0 text-light text-uppercase border border-light rounded p-2 col-md-3 text-center">Sub<span class="text-success"><u>Par</u></span></h1>
+				<p class="text-secondary- ml-5">Carbs below average</p>
+				<p class="lead">Sub parlour for healthy, fresh daily baked subs using gluten-free and keto friendly ingredients.</p>
+				<hr class="bg-light w-75 ml-auto ml-md-0">
+				<p>Don't see a sub you'd like on the left menu? Create one :)</p>
+				<div class="input-group m-0 mb-3 mx-auto mx-md-0 col-md-6 p-0">
+					<input type="text" class="form-control shadow-sm" placeholder="What's this sub called?" aria-label="What's this sub called?" aria-describedby="basic-addon2">
+					<div class="input-group-append">
+						<button class="btn btn-success mx-auto mx-md-0 shadow-sm" type="button">Create it</button>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="row p-3 justify-content-around">
+		<div class="col-md-5 shadow rounded mb-5">
+			<div class="row">
+				<div class="col-12">
+					<h3 class="text-center">MENU <span class="text-success"><i class="fas fa-book-open"></i></span></h3>
+					<hr class="w-50 mt-1">
+				</div>
+			</div>
+			<div class="row">
+				<div class="container" id="menu">
+          {{#each subs}}
+            <div class="row p-3 m-3 new_sub bg-light rounded shadow-sm">
+						  <div class="col-8 p-0">
+							<h5 class="pt-2" data-subName="{{sub_name}}"> {{id}}. {{sub_name}} </h5>
+						</div>
+						<div class="col-4 p-0 text-right">
+							<button type="button" class="btn btn-outline-success">Devour it!</button>
+						</div>
+					</div>
+          {{/each}}
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-5 shadow rounded mb-5">
+			<div class="row">
+				<div class="col-12">
+					<h3 class="text-center">DEVOURED <span class="text-success"><i class="fas fa-utensils"></i></span></h3>
+					<hr class="w-50 mt-1">
+				</div>
+			</div>
+			<div class="row">
+				<div class="container" id="devoured">
+					<!-- 	new sub -->
+					<div class="row p-3 m-3 new_sub bg-secondary rounded shadow-sm text-light">
+						<div class="col-12 p-0">
+							<h5 class="pt-2 text-center">Philly Cheese Steak</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<p class="text-center">subpar | <a class="text-success" href="https://github.com/MauriceWebb/Burger-App">Github</a></p>
+		</div>
+	</div>
+</div>
